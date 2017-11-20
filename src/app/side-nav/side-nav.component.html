@@ -1,15 +1,8 @@
-<nav class="z-depth-2">
-  <div class="nav-wrapper grey darken-4">
-      <app-side-nav class="hide-on-large-only"></app-side-nav>
 
-    <a routerLink="/home" routerLinkActive="active" class="brand-logo">Amalias Ragdolls</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
+  <ul id="slide-out" class="side-nav primary ">
       <li><a routerLink="about" routerLinkActive="active text-on-active">About</a></li>
       <li><a routerLink="breeders" routerLinkActive="active text-on-active">Our Kings & Queens</a></li>
       <li><a routerLink="gallery" routerLinkActive="active text-on-active">Gallery</a></li>
       <li><a routerLink="contactUs" routerLinkActive="active text-on-active">Contact Us</a></li>
-    </ul>
-  </div>
-</nav>
-
-<router-outlet></router-outlet>
+</ul>
+<div data-activates="slide-out" class="button-collapse btn-flat"><i class="material-icons burger">menu</i></div>

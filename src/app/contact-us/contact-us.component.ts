@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
+  private amaliasRagdollsFacebookUrl = 'https://www.facebook.com/amaliasragdolls';
+
   constructor() { }
+
+  goToAmaliasRagdolls() {
+    window.open(this.amaliasRagdollsFacebookUrl, '_blank')
+
+  }
 
   ngOnInit() {
   }

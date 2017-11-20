@@ -3,30 +3,21 @@
   <h1 class="title">Kings and Queens</h1>
   <hr>
 
-  <div class="row">
-    <div class="males center-align">
+  <div class="row center-align">
 
-      <div class="col m6 s12">
-        <img class="" src="http://3.bp.blogspot.com/-cKkcZkF8BbU/VXNbmbk7mNI/AAAAAAAATDQ/dt9ffqmJPoU/s1600/otto-2.jpg" alt="">
-      </div>
-      <div class="col m6 s12 ">
-        <img class="" src="http://3.bp.blogspot.com/-cKkcZkF8BbU/VXNbmbk7mNI/AAAAAAAATDQ/dt9ffqmJPoU/s1600/otto-2.jpg" alt="">
+    <div *ngFor="let cat of breeders; let i = index">
+
+      <div class="col m4 s12">
+        <img (mouseenter) ="mouseEnter($event, i)"
+             [ngClass]="hoveredId === i ? depth5: depth1"
+             id="{{i}}"
+             (mouseleave) ="mouseLeave($event)"
+             class="cat_breeder z-depth-1"
+
+             src="{{cat.location}}" alt="{{cat.description}}">
+        <p class="cat_name">{{cat.title}}</p>
       </div>
 
     </div>
-
-    <div class="females center-align">
-
-      <div class="col m12 s12 l4">
-        <img class="" src="http://3.bp.blogspot.com/-cKkcZkF8BbU/VXNbmbk7mNI/AAAAAAAATDQ/dt9ffqmJPoU/s1600/otto-2.jpg" alt="">
-      </div>
-      <div class="col m12 s12 l4">
-        <img class="" src="http://3.bp.blogspot.com/-cKkcZkF8BbU/VXNbmbk7mNI/AAAAAAAATDQ/dt9ffqmJPoU/s1600/otto-2.jpg" alt="">
-      </div>
-      <div class="col m12 s12 l4">
-        <img class="" src="http://3.bp.blogspot.com/-cKkcZkF8BbU/VXNbmbk7mNI/AAAAAAAATDQ/dt9ffqmJPoU/s1600/otto-2.jpg" alt="">
-      </div>
-    </div>
-
-  </div>
+</div>
 </div>

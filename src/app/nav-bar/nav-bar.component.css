@@ -8,6 +8,9 @@
   -webkit-transition: color .25s ease-in-out;
 }
 
+li:hover {
+ background-color: #484848;
+}
 li > a {
   color: white;
 }

@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BreedersComponent } from './breeders/breeders.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 
 
@@ -21,7 +22,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     AboutComponent,
     GalleryComponent,
     BreedersComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,

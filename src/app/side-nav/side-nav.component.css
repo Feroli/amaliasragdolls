@@ -1,0 +1,19 @@
+.burger {
+  transition: color 0.1s ease-out;
+}
+
+.burger {
+  color: white;
+}
+
+.burger:hover {
+  color: #f05545;
+}
+
+li > a {
+  color: white;
+}
+
+li:hover {
+  background-color: #484848;
+}

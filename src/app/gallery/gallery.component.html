@@ -1,3 +1,14 @@
-<p>
-  gallery works!
-</p>
+<div>
+
+  <h1 class="question">Gallery</h1>
+  <hr />
+
+  <div class="row cat_gallery_container center-align">
+    <div *ngFor="let image of imageArray">
+      <div class="col l3 s12">
+        <img class="gallery_pic " src="{{image.location}}" alt="{{image.description}}">
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -11,7 +11,18 @@
  background-color: #fefcfb;
 }
 
+.question {
+  font-size: 70px;
+  text-align: center;
+}
+
 
 body {
   background-color: #fefcfb;
+}
+
+hr {
+  width: 85%;
+  border: 1px solid #d81b60;
+  background-color: #d81b60;
 }

@@ -7,9 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
+  imageArray: Array<object>;
   constructor() { }
 
   ngOnInit() {
+    this.imageArray = [
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+      {'location': '../assets/otto.jpg', 'description': 'des...'},
+    ];
+
   }
 
 }

@@ -1,28 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
-.accent {
-  background-color: #FF4081 !important;
+
+.text-on-primary {
+  color: ffffff !important;
+}
+
+.text-on-secondary {
+  color: ffffff !important;
+}
+
+.text-on-active {
+  color: #f05545 !important;
 }
 
 .primary {
-  background-color: white;
+  background-color: #212121 !important;
 }
 
-.ligh-primary {
- background-color: #fefcfb;
+.primary-light {
+  background-color: #484848 !important;
 }
 
-.question {
-  font-size: 70px;
-  text-align: center;
+.primary-dark {
+  background-color: #000000 !important;
+}
+
+.secondary {
+  background-color: #b71c1c !important;
+}
+
+.secondary-dark {
+  background-color: #7f0000 !important;
+}
+
+.secondary-light {
+  background-color: #f05545 !important;
+}
+
+
+.title {
+text-align: center;
+color: white;
 }
 
 
 body {
-  background-color: #fefcfb;
+  background-color: #484848 !important;
 }
 
 hr {
   width: 85%;
-  border: 1px solid #d81b60;
-  background-color: #d81b60;
+  border: 1px solid #b71c1c;
+  background-color: #b71c1c;
 }
+

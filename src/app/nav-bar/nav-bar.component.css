@@ -1,9 +1,5 @@
-nav {
-  background-color: white;
-}
-
 .brand-logo {
-  color: black;
+  color: white;
   font-weight: 600pt;
   padding-left: 5%;
 
@@ -13,15 +9,15 @@ nav {
 }
 
 li > a {
-  color: black;
+  color: white;
 }
 
 li > a:hover {
-  color: #FF4081
+  color: #f05545
 }
 
 .brand-logo:hover {
-  color: #FF4081;
+  color: #f05545;
 
 }
 

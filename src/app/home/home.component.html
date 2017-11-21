@@ -1,9 +1,13 @@
 <div>
 
-  <video class=" cat_vid z-depth-5" autoplay>
+  <video class=" cat_vid responsive-video z-depth-5 hide-on-small-only" autoplay>
     <source src="{{videoUrl}}.mp4" type="video/mp4">
-      <img src="{{cat.location}}" alt="{{cat.description}}">
   </video>
+
+  <div class="hide-on-med-and-up">
+    <img class="cat_image" src="{{cat.location}}" alt="{{cat.description}}">
+  </div>
+
   <div class="vid_text">
     <h3 class="title">Welcome to Amalias Ragdolls</h3>
 

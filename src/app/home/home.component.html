@@ -2,11 +2,12 @@
 
   <video class=" cat_vid z-depth-5" autoplay>
     <source src="{{videoUrl}}.mp4" type="video/mp4">
+      <img src="{{cat.location}}" alt="{{cat.description}}">
   </video>
   <div class="vid_text">
     <h3 class="title">Welcome to Amalias Ragdolls</h3>
 
-    <a class="btn-floating btn-large waves-effect waves-light secondary" (click)="goToAbout()">
+    <a class="btn-floating btn-large waves-effect waves-light secondary-light" (click)="goToAbout()">
       <i class="material-icons">arrow_drop_down</i>
     </a>
   </div>

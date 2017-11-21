@@ -33,3 +33,23 @@ video {
   bottom: 0;
   z-index: -1;
 }
+
+@media only screen
+and (min-device-width: 993px)
+and (max-device-width: 1275px)
+
+ {
+  video {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+  }
+
+  .vid_text {
+    position: relative;
+    margin-top: 70%;
+  }
+}

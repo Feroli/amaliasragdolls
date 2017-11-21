@@ -9,10 +9,10 @@
 
       <div class="col m4 s12">
         <a href="{{cat.location}}" [attr.data-lightbox]="image-1" [attr.data-title]="cat.title">
-          <img (mouseenter) ="mouseEnter($event, i)"
+          <img (mouseenter)="mouseEnter($event, i)"
               [ngClass]="hoveredId === i ? depth5: depth1"
               id="{{i}}"
-              (mouseleave) ="mouseLeave($event)"
+              (mouseleave)="mouseLeave($event)"
               class="cat_breeder z-depth-1"
 
               src="{{cat.location}}" alt="{{cat.description}}" />

@@ -11,6 +11,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { BreedersComponent } from './breeders/breeders.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { AvailableComponent } from './available/available.component';
 
 
 
@@ -23,7 +24,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     GalleryComponent,
     BreedersComponent,
     ContactUsComponent,
-    SideNavComponent
+    SideNavComponent,
+    AvailableComponent
   ],
   imports: [
     BrowserModule,

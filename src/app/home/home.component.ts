@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   videoUrl: string;
-  cat: object;
+  cat;
 
   constructor(private router: Router) { }
 

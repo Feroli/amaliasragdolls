@@ -1,7 +1,7 @@
 
 .vid_text {
   position: relative;
-  margin-top: 40%;
+  margin-top: 30%;
 }
 .answer {
   color: rgb(117, 117, 117);
@@ -19,7 +19,7 @@ h3 {
 video {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 90%;
   top: 5em;
   left: 0;
 }

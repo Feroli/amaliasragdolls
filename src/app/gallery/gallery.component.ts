@@ -15,7 +15,6 @@ export class GalleryComponent implements OnInit {
 
   mouseEnter(event: MouseEvent, id: number) {
     this.hoveredId = id;
-    console.log(this.hoveredId);
     this.depth5 = event.type == 'mouseenter' ? 'z-depth-5' : 'z-depth-1';
   }
 

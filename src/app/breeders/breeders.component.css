@@ -20,11 +20,10 @@ p {
 
 .cat_breeder {
   border: 4px solid white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cat_breeder:hover {
   cursor: pointer;
 }
-
-
-

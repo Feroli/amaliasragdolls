@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+declare var $;
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css']
 })
-export class GalleryComponent implements OnInit {
+export class GalleryComponent implements OnInit, AfterViewInit {
 
   imageArray: Array<object>;
   hoveredId: number;
@@ -21,6 +21,10 @@ export class GalleryComponent implements OnInit {
   mouseLeave(event: MouseEvent) {
     this.depth1 = 'z-depth-1';
     this.depth5 = 'z-depth-1';
+  }
+
+  ngAfterViewInit() {
+    $('.materialboxed').materialbox();
   }
 
   ngOnInit() {
@@ -51,6 +55,7 @@ export class GalleryComponent implements OnInit {
       {'location': '../assets/otto.jpg', 'description': 'des...', 'title': 'otto'},
       {'location': '../assets/otto.jpg', 'description': 'des...', 'title': 'otto'},
     ];
+
 
   }
 

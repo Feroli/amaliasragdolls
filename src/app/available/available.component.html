@@ -6,16 +6,14 @@
     <div *ngFor="let cat of availableCats; let i = index" class="center-align">
 
         <div class="col m4 s12">
-            <a href="{{cat.location}}" [attr.data-lightbox]="image-1" [attr.data-title]="cat.description">
               <img (mouseenter) ="mouseEnter($event, i)"
                   [ngClass]="hoveredId === i ? depth5: depth1"
                   id="{{i}}"
                   (mouseleave) ="mouseLeave($event)"
-                  class="cat_breeder z-depth-1"
-
+                  class="cat_breeder responsive-img z-depth-1 materialboxed"
+                  width="250"
+                  [attr.data-caption]="cat.title"
                   src="{{cat.location}}" alt="{{cat.description}}" />
-
-              </a>
             <p class="cat_name">{{cat.title}}</p>
           </div>
 

@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+declare var $;
 @Component({
   selector: 'app-available',
   templateUrl: './available.component.html',
   styleUrls: ['./available.component.css']
 })
-export class AvailableComponent implements OnInit {
+export class AvailableComponent implements OnInit, AfterViewInit {
 
   availableCats: Array<object>;
   hoveredId: number;
@@ -22,6 +22,11 @@ export class AvailableComponent implements OnInit {
     this.depth1 = 'z-depth-1';
     this.depth5 = 'z-depth-1';
   }
+
+  ngAfterViewInit() {
+    $('.materialboxed').materialbox();
+  }
+
 
   ngOnInit() {
     this.availableCats = [

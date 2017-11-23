@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+declare var $;
 @Component({
   selector: 'app-breeders',
   templateUrl: './breeders.component.html',
   styleUrls: ['./breeders.component.css']
 })
-export class BreedersComponent implements OnInit {
+export class BreedersComponent implements OnInit, AfterViewInit {
 
   breeders: Array<object>;
   hoveredId: number;
@@ -24,6 +24,11 @@ export class BreedersComponent implements OnInit {
     this.depth5 = 'z-depth-1';
   }
 
+  ngAfterViewInit() {
+    $('.materialboxed').materialbox();
+  }
+
+
   ngOnInit() {
     this.breeders = [
 
@@ -34,8 +39,9 @@ export class BreedersComponent implements OnInit {
       { 'location': 'http://3.bp.blogspot.com/-cKkcZkF8BbU/VXNbmbk7mNI/AAAAAAAATDQ/dt9ffqmJPoU/s1600/otto-2.jpg', 'description': 'des...', 'title': 'ozzy' },
       { 'location': 'http://3.bp.blogspot.com/-cKkcZkF8BbU/VXNbmbk7mNI/AAAAAAAATDQ/dt9ffqmJPoU/s1600/otto-2.jpg', 'description': 'des...', 'title': 'ozzy' },
       { 'location': 'http://3.bp.blogspot.com/-cKkcZkF8BbU/VXNbmbk7mNI/AAAAAAAATDQ/dt9ffqmJPoU/s1600/otto-2.jpg', 'description': 'des...', 'title': 'ozzy' }
+    ];
+    $('.materialboxed').materialbox();
 
-    ]
   }
 
 }

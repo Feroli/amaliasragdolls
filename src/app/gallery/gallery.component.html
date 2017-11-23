@@ -5,16 +5,16 @@
 
   <div class="row cat_gallery_container center-align">
     <div *ngFor="let image of imageArray; let i = index">
-      <div class="col l4 s12">
-        <a href="{{image.location}}" [attr.data-lightbox]="image-1" [attr.data-title]="image.title">
+      <div class="col m4 s12 image_container">
         <img (mouseenter) ="mouseEnter($event, i)"
              [ngClass]="hoveredId === i ? depth5: depth1"
              id="{{i}}"
-             (mouseleave) ="mouseLeave($event)"
-             class="gallery_pic z-depth-1"
+             width="250"
+             (mouseleave)="mouseLeave($event)"
+             class="gallery_pic z-depth-1 responsive-img materialboxed"
+             [attr.data-caption]="image.title"
              src="{{image.location}}"
              alt="{{image.description}}" />
-             </a>
       </div>
     </div>
   </div>
